@@ -11,6 +11,7 @@
     <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
     <None Remove="ViewModels\" />
     <None Remove="bootstrap" />
+    <None Remove="Migrations\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.11" />
@@ -23,5 +24,6 @@
   <ItemGroup>
     <Folder Include="Model\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="Migrations\" />
   </ItemGroup>
 </Project>
