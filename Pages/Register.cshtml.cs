@@ -13,6 +13,7 @@ namespace WebApp.Pages
     {
         private UserManager<IdentityUser> userManager;
         private SignInManager<IdentityUser> signInManager;
+
         [BindProperty]
         public Register Model { get; set; }
         public RegisterModel(UserManager<IdentityUser> userManager,SignInManager<IdentityUser> signInManager)
@@ -37,7 +38,7 @@ namespace WebApp.Pages
                 if (result.Succeeded)
                 {
                     await signInManager.SignInAsync(user, false);
-                    return RedirectToPage("Index");
+                    return RedirectToPage("Registered");
                 }
                 foreach(var error in result.Errors)
                 {

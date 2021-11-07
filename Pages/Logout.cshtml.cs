@@ -24,7 +24,7 @@ namespace WebApp.Pages
         public async Task<IActionResult> OnPostLogoutAsync()
         {
             await signInManager.SignOutAsync();
-            return RedirectToPage("Login");
+            return RedirectToPage("GoodBye");
         }
         public IActionResult OnPostDontLogoutAsync()
         {
